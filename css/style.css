@@ -1,5 +1,5 @@
 body {
-    min-width: 1040px;
+    min-width: 1060px;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -226,6 +226,7 @@ input[type="radio"].visually-hidden {
     margin-right: auto;
     color: #834700;
     border: 3px solid #834700;
+    transition: background-color 0.3s;
 }
 
 .info-btn:hover {
@@ -343,6 +344,9 @@ input[type="radio"].visually-hidden {
     vertical-align: baseline;
     text-transform: uppercase;
 }
+.history-title-2 {
+    margin-top: 75px;
+}
 
 .history-description {
     position: relative;
@@ -361,7 +365,6 @@ input[type="radio"].visually-hidden {
 
 .history-info {
     margin: 0;
-    margin-bottom: 75px;
     padding: 0;
 }
 
@@ -438,8 +441,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.price-list th,
-.price-list td {
+.price-list-item {
     padding: 15px 0;
 }
 
@@ -590,6 +592,7 @@ input[type="radio"].visually-hidden {
 .phone-field:focus,
 .add-phone-field:focus,
 .email-field:focus,
+.option-field:focus,
 .comment-field:focus {
     background-color: #ffffff;
 }
@@ -715,11 +718,12 @@ input[type="radio"].visually-hidden {
 
 .developer-link {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 25px;
     color: #ffffff;
     transition: transform 0.3s;
     vertical-align: baseline;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .developer-link:hover {
